@@ -1,2 +1,28 @@
-var1 var2 var3 line1
-line2 var1 var2 var3
+variable1=23
+variable2=474
+variable3=5
+variable4=97
+
+message1="Greeting from ** line $LINENO *** of the data file!"
+message2="Enough for now. Goodbye."
+
+print_message ()
+{
+    if [ -z "$1" ]
+    then
+        return 1
+    fi
+    
+    echo
+    
+    until [ -z "$1" ]
+    do
+        echo -n "$1"
+        echo -n " "
+        shift
+    done
+    
+    echo
+    
+    return 0
+}
