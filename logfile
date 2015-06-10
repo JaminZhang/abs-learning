@@ -1,0 +1,13 @@
+Wed Jun 10 16:28:36 CST 2015
+Linux jamin-sfo1 2.6.32-431.1.2.0.1.el6.x86_64 #1 SMP Fri Dec 13 13:06:13 UTC 2013 x86_64 x86_64 x86_64 GNU/Linux
+----------------------------------------------------------
+Jun 9 20:42:17 jamin-sfo1 ocserv[1653]: main: 114.42.126.193:53556
+main-misc.c:423: command socket closed Jun 9 22:25:16 jamin-sfo1
+ocserv[1653]: main: 74.82.47.3:56700 main-misc.c:423: command socket
+closed Jun 9 22:30:20 jamin-sfo1 ocserv[1653]: main: 74.82.47.3:35327
+main-misc.c:423: command socket closed Jun 9 22:32:25 jamin-sfo1
+ocserv[24796]: GnuTLS error (at worker-vpn.c:734): Could not negotiate
+a supported cipher suite. Jun 9 22:32:25 jamin-sfo1 ocserv[1653]: main:
+74.82.47.3:54171 main-misc.c:423: command socket closed
+
+
