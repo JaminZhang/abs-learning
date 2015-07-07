@@ -1,0 +1,261 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+)
+{
+{
+{
+}
+}
+}
+}
+1lrli2+dsi!>.]ds.xd1<2" | dc
+        -a) echo "Option \"a\"";;
+ARGS=2
+AWKSCRIPT=' { printf( "%3.7f\n", sqrt($1*$1 + $2*$2) ) } '
+BASE=16
+        -b) echo "Option \"b\"";;
+BEGIN=45
+BEGIN=75
+#!/bin/bash
+#!/bin/bash
+#!/bin/bash
+#!/bin/bash
+#!/bin/bash
+#!/bin/bash
+#!/bin/bash
+#!/bin/bash
+         *) break;;
+    case "$1" in
+        -c) echo "Option \"c\"";;
+COUNT=80
+( date; uname -a ) >> logfile
+        -d) echo "Option \"d\"";;
+declare -r M_PI=3.141592654
+DIMENSION=10000
+distance=
+distance=$(bc -l << EOF
+do
+do
+do
+do
+do
+do
+done
+done
+done
+done
+done
+done
+ done
+E_BADARGS=65
+E_BADARGS=85  
+echo
+echo
+    echo
+    echo
+    echo
+    echo
+    echo
+echo 
+        echo 0
+echo $1 $2 | awk "$AWKSCRIPT"
+    echo ""$1" "$BASE" o p" | dc
+        echo "$1" -\> `cat $FILE | tr -cd  "$1" | wc -c`
+        echo "$1 is not a  single char."
+echo  "$1[p]s2[lip/dli%0=1dvsr]s12sid2%0=13sidvsr[dli%0=\
+echo "After $shots shots, PI looks like approximately   $Pi"
+echo; echo
+echo; echo
+echo; echo
+echo; echo
+    echo Example: `basename $0` foobar.txt G n U L i N U x.
+echo "Factors of $1:"
+    echo "File \"$FILE\" does not exist."
+echo >>logfile
+echo >>logfile
+echo ---------------------------------------------------------- >>logfile
+    echo -n "$a "
+    echo -n "$a "
+    echo -n "$a "
+    echo -n "$a "
+echo -n "Deviation from mathematical value of PI =        $error"
+echo -n "Hypotenuse of $1 and $2 = "
+    echo Note: `basename $0` arguments are case sensitive.
+    echo "Not enough arguments."
+    echo -n "PI ~ $Pi"
+        echo -n "SPLASH!  "
+        echo -n "THUD!    "
+    echo "Number to factor must be $MIN or greater."
+echo " ($pct_error% error)"
+    echo $rnum
+    echo "Usage: $0 number"
+    echo "Usage: $0 number"
+    echo "Usage $0 -[options a,b,c]"
+    echo Usage:`basename $0` file letters
+    echo "Usage: `basename $0` side_1 side_2"
+    else
+    else
+END=80
+END=80
+E_NOARGS=85
+E_NOARGS=85
+EOF
+E_OPTERR=65
+error=0
+error=$(echo "scale=9; $Pi - $M_PI" | bc)
+     esac
+E_TOOSMALL=86
+exit
+exit
+exit
+exit $?
+ exit 0
+exit 0
+exit 0
+exit 0
+    exit $E_BADARGS
+    exit $E_BADARGS
+    exit $E_BADARGS
+    exit $E_NOARGS
+    exit $E_NOARGS
+    exit $E_OPTERR
+    exit $E_TOOSMALL
+fi
+fi
+fi
+fi
+fi
+fi
+fi
+    fi
+    fi
+    fi
+FILE=$1
+for a in `seq 80`
+for a in `seq $BEGIN $END`
+for a in `seq $BEGIN $INTERVAL $END`
+for a in `seq $COUNT`
+for n in `seq $LETTERS`; do
+get_random ()
+hexcvt ()
+hexcvt "$1"
+hypotenuse ()
+    hypotenuse $xCoord $yCoord
+if [ "$1" -lt "$MIN" ]
+    if [ "$distance" -le "$DIMENSION" ]
+    if [[ `echo -n "$1" | wc -c` -eq 1 ]]; then
+if [ "$#" -eq 0 ]
+if [ ! -f $FILE ]; then
+if [ $# -lt $MINARGS ]; then
+if [ $# -ne "$ARGS" ]
+    if [ -z "$1" ]
+if [ -z "$1" ]
+if [ -z $1 ]
+INTERVAL=5
+let LETTERS=$#-1
+    let "rnum = $RANDOM % $DIMENSION"
+LINES=5
+MAXSHOTS=1000
+MIN=2
+MINARGS=2
+pct_error=$(echo "scale=2; 100.0 * $error / $M_PI" | bc)
+Pi=0
+    Pi=$(echo "scale=9; $PMULTIPLIER*$splashes/$shots" | bc)
+PMULTIPLIER=4.0
+    printf "#%4d   " $shots
+    printf "Distance = %5d  " $distance
+    printf "Xc = %4d  " $xCoord
+    printf "Yc = %4d  " $yCoord
+    RANDOM=$SEED
+    return
+        return
+scale = 0
+    SEED=$(head -n 1 /dev/urandom | od -N 1 | awk '{ print $2 }')
+set -- `getopt "abcd:" "$@"`
+    shift
+     shift
+    ((shots++))
+shots=0
+    show_help
+show_help() {
+        ((splashes++))
+splashes=0
+sqrt ( $1 * $1 + $2 * $2 )
+tail -n $LINES /var/log/messages | xargs | fmt -s >>logfile
+then
+then
+then
+then
+then
+    then
+    then
+        ((thuds++))
+thuds=0
+while [ "$shots" -lt  "$MAXSHOTS" ]
+while [ ! -z "$1" ]
+    xCoord=$(get_random) 
+    yCoord=$(get_random)
