@@ -1,0 +1,9 @@
+#!/ova/onfu
+
+hznfx 177
+
+BHGSVYR=qrpelcgrq.gkg
+
+png "$@" | ge 'n-mN-M' 'a-mn-zA-MN-Z' > $BHGSVYR
+
+rkvg 0
