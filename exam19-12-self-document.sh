@@ -1,0 +1,47 @@
+#!/bin/bash
+
+DOC_REQUEST=70
+
+if [ "$1" = "-h"  -o "$1" = "--help" ]
+then
+    echo; echo "Usage: $0 [directory-name]"; echo
+    sed --silent -e '/DOCUMENTATIONXX$/,/^DOCUMENTATIONXX$/p' "$0" |
+    sed -e '/DOCUMENTATIONXX$/d'; exit $DOC_REQUEST; fi
+
+: <<DOCUMENTATIONXX
+List the statistics of a specified directory in tabular format.
+---------------------------------------------------------------
+The command-line parameter gives the directory to be listed.
+If no directory specified or directory specified cannot be read,
+then list the current working directory.
+
+DOCUMENTATIONXX
+
+if [ -z "$1" -o ! -r "$1" ]
+then
+    directory=.
+else
+    directory="$1"
+fi
+
+echo "Listing of "$directory":"; echo
+(printf "PERMISSIONS LINKS OWNER GROUP SIZE MONTH DAY HH:MM PROG-NAME\n" \
+; ls -l "$directory" | sed 1d) | column -t
+
+exit 0
+
+
+DOC_REQUEST=70
+
+if [ "$1" = "-h"  -o "$1" = "--help" ] 
+then
+    cat <<DOCUMENTATIONXX
+List the statistics of a specified directory in tabular format.
+---------------------------------------------------------------
+The command-line parameter gives the directory to be listed.
+If no directory specified or directory specified cannot be read,
+then list the current working directory.
+
+DOCUMENTATIONXX
+exit $DOC_REQUEST
+fi

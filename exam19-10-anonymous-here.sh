@@ -1,0 +1,7 @@
+#!/bin/bash
+
+: <<TESTVARIABLES
+${HOSTNAME?}${USER?}${MAIL?}
+TESTVARIABLES
+
+exit $?
