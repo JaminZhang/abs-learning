@@ -1,0 +1,3 @@
+This statement is sent to the log file, "script.log".
+This statement is appended to "script.log".
+This statement is also appended to "script.log".
