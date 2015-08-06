@@ -1,0 +1,30 @@
+VARIABLE1=23
+VARIABLE2=474
+VARIABLE3=5
+VARIABLE4=97
+
+MESSAGE1="GREETING FROM ** LINE $LINENO *** OF THE DATA FILE!"
+MESSAGE2="ENOUGH FOR NOW. GOODBYE."
+
+PRINT_MESSAGE ()
+{
+    IF [ -Z "$1" ]
+    THEN
+        RETURN 1
+    FI
+    
+    ECHO
+    
+    UNTIL [ -Z "$1" ]
+    DO
+        ECHO -N "$1"
+        ECHO -N " "
+        SHIFT
+    DONE
+    
+    ECHO
+    
+    RETURN 0
+}
+
+##
