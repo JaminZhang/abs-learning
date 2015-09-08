@@ -1,6 +1,11 @@
 #!/bin/bash
 
 set -f
+set -u
+
+echo $unset_var
+
+echo "Should not echo!"
 
 echo Content-type: text/plain
 echo
